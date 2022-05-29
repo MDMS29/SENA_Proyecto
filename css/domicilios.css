@@ -1,0 +1,113 @@
+/*......BARRA DE NAVEGACION......*/
+.nav1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px 10px 0px 10px;
+    background-color: white;
+    height: 50px;
+}
+
+.button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.button:hover{
+    background-color: black; 
+    color: white;
+}
+/*..................*/
+main{
+    display: flex;
+    justify-content: center;
+}
+section{margin: 20px;}
+/*..................*/
+
+/*--- FORMULARIO ---*/
+#pedido{width: auto;}
+form{
+    padding: 50px 20px;
+    padding-top: 28px;
+    background-color: aqua;
+}
+
+h1{
+    text-align: center;
+    padding: 12px;
+    color: #444;
+}
+
+input{
+    width: calc(90% - 0px);
+    padding: 8px;
+    margin: auto;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+input[type='submit']{
+    background-color: #48e;
+    width: calc(80% - 20px);
+    color: #fff;
+    margin: 0 10%;
+    margin-top: 22px;
+    border: none;
+}
+
+.ok{
+    text-align: center;
+    width: 100%;
+    background-color: #4e8;
+    padding: 12px;
+    color: #fff;
+}
+
+.bad{
+    text-align: center;
+    width: 100%;
+    background-color: #a22;
+    padding: 12px;
+    color: #fff;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*--- INFORMACION USUARIO ---*/
+#info-pedido{
+    width: 400px;
+    background-color: #444;
+}
+
+.pedido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    top: -20px;
+    margin: 10px;
+}
+
+.info-user{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,104 @@
+:root {
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.carousel {
+    padding-bottom: 50px;
+    width: 800px;
+}
+
+.carousel_contenerdor {
+    position: relative;
+}
+
+.carousel_anterior,
+.carousel_siguiente {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    background: none;
+    color: white;
+    opacity: 50%;
+}
+
+.carousel_anterior:hover,
+.carousel_siguiente:hover {
+    opacity: 100%;
+}
+
+.carousel_anterior {
+    bottom: -180px;
+    left: -30px;
+}
+
+.carousel_siguiente {
+    top: -170px;
+    right: -800px;
+}
+
+.carousel_lista {
+    overflow: hidden;
+}
+
+.carousel_elemento {
+    text-align: center;
+}
+
+.carousel_indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: rgba(126, 122, 122, 0.671);
+    opacity: 1;
+    border-radius: 0;
+}
+
+.carousel_indicadores .glider-dot:focus {
+    background: white;
+}
+
+
+/*CONFIGURACION RESPOSIVE*/
+
+@media screen and (max-width: 775px) {
+    div.carousel {
+        width: 500px;
+    }
+    div.carousel_contenedor {
+        align-items: center;
+    }
+    .carousel_anterior,
+    .carousel_siguiente {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 860px) {
+    .carousel_anterior,
+    .carousel_siguiente {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.carousel {
+        width: 400px;
+    }
+}

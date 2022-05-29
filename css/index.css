@@ -1,0 +1,351 @@
+* {
+    box-sizing: content-box;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+}
+
+a h1 {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.7em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+body {
+    background-color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*......CABEZERA (BAR-NAV & TITULO-LOGO).......*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /*Mueve los elementos a los lados de la pagina */
+    align-items: center;
+    min-height: 60px;
+    margin: 0;
+    background-color: cornflowerblue;
+    background: url("https://www.adobe.com/es/express/discover/sizes/media_12fa8cb62228835a68a2d107675896c3aa41fb5e4.png?width=750&format=png&optimize=medium");
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+}
+
+.nav1 {
+    display: flex;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    margin-top: 3px;
+    border: 5px solid white;
+    background-color: white;
+    color: black;
+}
+
+
+/*--- --- HERO --- ---*/
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: antiquewhite;
+}
+
+.cont-hero {
+
+    display: flex;
+    width: 1200px;
+    background-color: aqua;
+}
+
+.img-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.info-hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.info-hero p {
+    padding: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+
+p.title-hero {
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
+
+
+/*..........SECCION 1 (MISION - VISION).......*/
+
+#mision-vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.article1 {
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px 40px 30px 40px;
+    max-width: auto;
+    padding: 3px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+    transition-duration: 1s;
+}
+
+
+/*----HORARIOS----*/
+
+.aside3 {
+    background-color: white;
+    margin: 10px 0px;
+    padding: 15px 0px;
+}
+
+ul.horarios {
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+
+/*..........SECCION 2 (MENU COMIDAS).......*/
+
+#menu-comidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+    background-color: aqua;
+}
+
+
+/*.....MENU DE COMIDAS.....*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: auto;
+    margin: 10 0px;
+    background-color: blueviolet;
+}
+
+li>h3 {
+    margin: 3px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/*PARTE2*/
+
+.comidas:hover {
+    background-color: white;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.493);
+}
+
+.comidas {
+    border-radius: 12px;
+    margin: 10px;
+    padding: 20px;
+    background-color: burlywood;
+}
+
+.cont-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.salchipapa {
+    display: block;
+    background-color: bisque;
+}
+
+.perritos {
+    display: block;
+    background-color: brown;
+}
+
+.picadas {
+    display: block;
+    background-color: cornflowerblue;
+}
+
+.pizza {
+    display: block;
+    background-color: darkmagenta;
+}
+
+.salvajada {
+    display: block;
+    background-color: rgb(0, 139, 63);
+}
+
+
+/*.....PIDE DE PAGINA......*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 0.1px;
+    width: auto;
+    background-color: darkcyan;
+    background: #111;
+    color: #fff;
+}
+
+.cont- h4 {
+    margin: 20px 10px;
+}
+
+.cont-redes {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.facebook {
+    margin-right: 30px;
+}
+
+.mas-informacion {
+    margin: 20px 10px;
+}
+
+
+/*--- --- CONFIGURACION DE PANTALLAS --- --- */
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    header h1 {
+        text-align: center;
+    }
+    /*--- --- HERO --- ---*/
+    .cont-hero {
+        flex-direction: column;
+    }
+    
+    img.logo-hero{
+        width: 200px;
+    }
+
+    .img-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px 5px 0px;
+    }
+
+    .info-hero { padding: 0px; }
+
+    .info-hero p {
+        padding: 10px 5px 30px 5px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    p.title-hero {
+        padding: 15px 5px 15px 5px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #mision-vision {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .article1 {
+        margin: 30px 5px 30px 5px;
+    }
+    .nav1 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container {
+        width: 500px;
+    }
+    div.comidas{
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .mas-informacion {
+        margin: 0px 10px 80px 10px;
+    }
+    .container {
+        width: 480px;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 775px) {
+    footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .mas-informacion {
+        margin: 0px 10px 80px 10px;
+    }
+    .container {
+        width: 500px;
+    }
+}

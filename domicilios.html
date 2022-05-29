@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/domicilios.css">
+    <title>Domicilios</title>
+</head>
+<body>
+    <nav class="nav1">
+        <a class="button button1" href="#"> Menú </a>
+        <a class="button button2" href="index.html">Inicio</a>
+        <a class="button button3" href="#"> Reservaciones </a>
+        <a class="button button4" href="#"> Contactanos </a>
+        <a class="button button4" href="login.html"> Login </a>
+    </nav>
+    <main>
+        <section id="info-pedido">
+            <div class="pedido">
+                <div class="logo">
+                    <img src="https://norfipc.com/fotos/cursis/8no-me-borres.jpeg" alt="logo" width="50px" height="50px">
+                </div>
+
+                <div class="info-user">
+                    <label id="nombre-user"></label>
+                </div>
+            </div>
+        </section>
+
+        <section id="pedido">
+            <div id="formulario">
+                <form method="post">
+                    <h1>DOMICILIOS</h1>
+                    <form method="POST" action="registrar.php" id="formulario">
+                            <p style="text-align: center;">Por favor, diligencie todos los campos de este fomulario.</p>
+                            <div class="form-group">
+                                <select name="txtTD" class="form-control" required>
+                                    <option value="CC">Cédula de ciudadanía</option>
+                                    <option value="TI">Tarjeta de identidad</option>
+                                    <option value="CE">Cédula de extranjería</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control doc" name="txtDoc" placeholder="Ingrese el documento de identidad" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control nombres" name="txtNombres" placeholder="Ingrese Nombres" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control apellidos" name="txtApellidos" placeholder="Ingrese Apellidos" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="number" class="form-control tel" name="txtTelefono" placeholder="Ingrese Telefono o Celular" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control direccion" name="txtDir" placeholder="Ingrese la direccion" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="date" class="form-control fecha" name="txtFecha" placeholder="Ingrese la fecha de ingreso" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="time" class="form-control hora" name="txtHora" placeholder="Ingrese la hora de ingreso" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control motivo" name="txtMotivo" placeholder="Ingrese el motivo de ingreso" required>
+                            </div>
+
+                            <input type="submit" class="btn btn-primary" value="¡PEDIR!">
+                    </form>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <script src="js/domicilios.js"></script>
+    <?php
+        include('registrar.php')
+    ?>
+</body>
+</html>
